@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ClassFragment">
+
+    <!--        app:tabMode="scrollable"-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabSelectedTextColor="#41B638"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    
+    <com.example.baitaptablayoutbottomnav.widget.CustomViewPage
+        android:id="@+id/class_viewpager"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
